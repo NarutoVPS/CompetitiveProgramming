@@ -1,6 +1,6 @@
-#include <bits/stdc++.h>
+// #include <bits/stdc++.h>
 
-using namespace std;
+// using namespace std;
 
 class Solution {
 public:
@@ -16,7 +16,7 @@ public:
     }
 };
 
-int main(){
-    Solution s;
-    cout<<s.defangIPaddr("192.168.1.1");
-}
+// int main(){
+//     Solution s;
+//     cout<<s.defangIPaddr("192.168.1.1");
+// }
