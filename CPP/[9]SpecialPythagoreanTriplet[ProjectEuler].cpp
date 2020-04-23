@@ -22,13 +22,12 @@ int main(){
     int a{},b{},c{};
     int limit{500};
 
-    fo2(i, limit){
-        fo2(j, limit){
-            fo2(k, limit){
-                if((i+j+k == 1000) && (i*i + j*j == k*k)){
-                    cout<<i*j*k<<endl;
-                    exit(0);
-                }
+    fo2(a, limit){
+        fo2(b, limit){
+            c = 1000 - (a + b);   //since a + b + c = 1000
+            if((a+b+c == 1000) && (a*a + b*b == c*c)){
+                cout<<a*b*c<<endl;
+                exit(0);
             }
         }
     }
