@@ -32,3 +32,34 @@ int main(){
 
     return 0;
 }
+
+
+/*
+vector<int> circularArrayRotation(vector<int> a, int k, vector<int> queries) {
+    int n=a.size();
+    vector<int> c;
+    k=k%n;
+    reverse(a.begin(),a.begin()+n-k);
+    reverse(a.begin()+n-k,a.begin()+n);
+    reverse(a.begin(),a.end());
+    for(int i=0;i<queries.size();i++)
+    {
+        c.push_back(a[queries[i]]);
+    }
+    return c;
+}
+int main()
+{
+    int ne,k,nq;
+    cin>>ne>>k>>nq;
+    vector<int> a(ne),queries(nq);
+    for(int i=0;i<ne;i++)
+        cin>>a[i];
+    for(int i=0;i<nq;i++)
+        cin>>queries[i];
+    vector<int> ans=circularArrayRotation(a,k,queries);
+    for(auto i: ans)
+        cout<<i<<endl;
+    return 0;
+}
+*/
