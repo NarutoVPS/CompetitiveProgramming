@@ -23,15 +23,14 @@
 #include <bits/stdc++.h>
 using namespace std;
 
+// O(n) time | O(1) space
 int solve(const string &str){
 	if (!str.size())
 		return 0;
 	if (str.size() == 1)
 		return 1;
 
-
 	int maxCount{1}, current{1};
-
 	for (int i{1}; i<str.size(); i++){
 		if (str[i] == str[i-1]){
 			current++;
@@ -40,7 +39,6 @@ int solve(const string &str){
 		else
 			current = 1;
 	}
-
 	return maxCount;
 }
 
