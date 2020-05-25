@@ -2,7 +2,7 @@
 using namespace std;
 
 // O(n) time | O(1) space
-int solve(vector<long long> num){
+long long solve(vector<long long> num){
 	if (num.size() == 1)
 		return 0;
 
