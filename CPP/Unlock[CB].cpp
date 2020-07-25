@@ -24,6 +24,7 @@
 #include <bits/stdc++.h>
 using namespace std;
 
+// O(nk) Time | O(1) Space
 vector<int> solve(vector<int> &num, int k, int n) {
     if (k >= n) {
         sort(num.begin(), num.end(), greater<int>());
