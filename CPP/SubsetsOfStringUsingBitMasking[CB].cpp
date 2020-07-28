@@ -1,3 +1,9 @@
+/*
+    For a given string, print all the possible subsets (the power set).
+
+    Note: The solution set must not contain duplicate subsets.
+*/
+
 #include <bits/stdc++.h>
 using namespace std;
 
