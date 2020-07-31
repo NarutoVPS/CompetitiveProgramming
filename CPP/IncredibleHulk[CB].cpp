@@ -29,6 +29,7 @@
 #include<bits/stdc++.h>
 using namespace std;
 
+// Returns the nearest integer which is of power 2 ans less than n.
 int powerTwo(int n) {
 	if (n <= 2)
 		return 1;
@@ -49,6 +50,16 @@ int solution(int n) {
 	return ans;
 }
 
+// Better approach. The answer is numner of set bits in the given number.
+int solution2(int n) {
+	int ans{};
+	while (n) {
+		ans += n & 1;
+		n >>= 1;
+	}
+	return ans;
+}
+
 int main() {
 	int t;
 	cin>>t;
@@ -58,6 +69,7 @@ int main() {
 		cin>>n;
 
 		cout<<solution(n)<<endl;
+		cout<<solution2(n)<<endl;
 	}
 	return 0;
 }
