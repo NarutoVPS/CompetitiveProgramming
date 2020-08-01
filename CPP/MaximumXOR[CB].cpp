@@ -27,15 +27,15 @@ long long solution(long long x, long long y) {
 
     long long mask = 1ll << ((sizeof(long long) * 8ll) - 1ll);
 
-    long long n = sizeof(long long) * 8;
+    long long n = sizeof(long long) * 8ll;
 
     while((x & mask) == (y & mask)) {
-        x <<= 1;
-        y <<= 1;
+        x <<= 1ll;
+        y <<= 1ll;
         n--;
     }
 
-    return (1 << n) - 1;
+    return (1ll << n) - 1ll;
 }
 
 int main () {
