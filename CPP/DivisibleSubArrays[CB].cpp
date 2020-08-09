@@ -49,7 +49,6 @@ int main() {
         for(int i{}; i<n; i++) {
             cin>>num[i];
             sum +=num[i];
-            sum %= n;
             sum = (sum + n) % n;
             fre[sum]++;
         }
