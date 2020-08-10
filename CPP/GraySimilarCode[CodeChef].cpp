@@ -25,6 +25,7 @@
 #include <bits/stdc++.h>
 using namespace std;
 
+// O(1) Time & Space if n > 130 else O(n^4) Time
 int main() {
     unsigned long long int n;
     cin>>n;

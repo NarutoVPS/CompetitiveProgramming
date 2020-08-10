@@ -1,3 +1,4 @@
+# O(1) Time & Space if n > 130 else O(n^4) Time
 n = int(input())
 if n >= 130 :
     print("Yes")
